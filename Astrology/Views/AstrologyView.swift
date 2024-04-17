@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AstrologyView: View {
     @State var planets = [Planet]()
     @State private var username: String = ""
     @State private var birthDate = Date.now
     
-    @StateObject var vm = PostViewModel()
+    @StateObject var vm = AstrologyViewModel()
     
     var body: some View {
         VStack {
@@ -27,7 +27,7 @@ struct ContentView: View {
                             "time":currDate.1
                         ]
                         await vm.fetchData(parameters)
-                        planets = vm.postData
+                        planets = vm.planets
                     }
                 })
             }
@@ -62,12 +62,8 @@ struct ContentView: View {
         }
         .onAppear {
             Task {
-                let parameters = [
-                    "date":"1981-11-06",
-                    "time":"12:00:00"
-                ]
-                await vm.fetchData(parameters)
-                planets = vm.postData
+                await vm.fetchData()
+                planets = vm.planets
             }
         }
     }
@@ -82,36 +78,8 @@ struct ContentView: View {
     }
 }
 
-struct Planet: Codable, Identifiable {
-    let id: Int
-    let name: String
-    let position:Position
-    let dignity:String?
-}
-
-struct Position: Codable {
-    let absoluteDegrees: Float
-    let sign: String
-    let deg: Float
-    let min: Float
-    let sec: Float
-    
-    enum CodingKeys: String, CodingKey {
-       case absoluteDegrees = "absolute_degrees"
-       case sign
-       case deg
-       case min
-       case sec
-   }
-    
-    func asText() -> String {
-        return "\(sign) \(Int(deg))° \(Int(min))'"
-    }
-}
-
-
-struct ContentView_Previews: PreviewProvider {
+struct AstrologyView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AstrologyView()
     }
 }

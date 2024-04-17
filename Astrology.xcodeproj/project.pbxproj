@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011AB8522BD060F800A2EA65 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011AB8512BD060F800A2EA65 /* Planet.swift */; };
+		011AB8542BD0611900A2EA65 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011AB8532BD0611900A2EA65 /* Position.swift */; };
+		011AB8562BD0616B00A2EA65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011AB8552BD0616B00A2EA65 /* ContentView.swift */; };
 		015168572B4EFA820069E5FC /* AstrologyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168562B4EFA820069E5FC /* AstrologyApp.swift */; };
-		015168592B4EFA820069E5FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168582B4EFA820069E5FC /* ContentView.swift */; };
+		015168592B4EFA820069E5FC /* AstrologyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168582B4EFA820069E5FC /* AstrologyView.swift */; };
 		0151685B2B4EFA840069E5FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0151685A2B4EFA840069E5FC /* Assets.xcassets */; };
 		0151685E2B4EFA840069E5FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0151685D2B4EFA840069E5FC /* Preview Assets.xcassets */; };
 		015168682B4EFA840069E5FC /* AstrologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168672B4EFA840069E5FC /* AstrologyTests.swift */; };
 		015168722B4EFA840069E5FC /* AstrologyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168712B4EFA840069E5FC /* AstrologyUITests.swift */; };
 		015168742B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168732B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift */; };
 		01827FBC2BCF408400ACBBAF /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01827FBB2BCF408400ACBBAF /* WebService.swift */; };
-		01827FBE2BCF41D000ACBBAF /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01827FBD2BCF41D000ACBBAF /* PostViewModel.swift */; };
+		01827FBE2BCF41D000ACBBAF /* AstrologyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01827FBD2BCF41D000ACBBAF /* AstrologyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011AB8512BD060F800A2EA65 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		011AB8532BD0611900A2EA65 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		011AB8552BD0616B00A2EA65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		015168532B4EFA820069E5FC /* Astrology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astrology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		015168562B4EFA820069E5FC /* AstrologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyApp.swift; sourceTree = "<group>"; };
-		015168582B4EFA820069E5FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		015168582B4EFA820069E5FC /* AstrologyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyView.swift; sourceTree = "<group>"; };
 		0151685A2B4EFA840069E5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0151685D2B4EFA840069E5FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		015168632B4EFA840069E5FC /* AstrologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstrologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +53,7 @@
 		015168712B4EFA840069E5FC /* AstrologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyUITests.swift; sourceTree = "<group>"; };
 		015168732B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01827FBB2BCF408400ACBBAF /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		01827FBD2BCF41D000ACBBAF /* PostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		01827FBD2BCF41D000ACBBAF /* AstrologyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstrologyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011AB8572BD0631100A2EA65 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				01827FBD2BCF41D000ACBBAF /* AstrologyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		011AB8582BD0631800A2EA65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				011AB8552BD0616B00A2EA65 /* ContentView.swift */,
+				015168582B4EFA820069E5FC /* AstrologyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		011AB8592BD0631D00A2EA65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				011AB8512BD060F800A2EA65 /* Planet.swift */,
+				011AB8532BD0611900A2EA65 /* Position.swift */,
+				011AB85A2BD0634600A2EA65 /* Networking Layer */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		011AB85A2BD0634600A2EA65 /* Networking Layer */ = {
+			isa = PBXGroup;
+			children = (
+				01827FBB2BCF408400ACBBAF /* WebService.swift */,
+			);
+			path = "Networking Layer";
+			sourceTree = "<group>";
+		};
 		0151684A2B4EFA820069E5FC = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +139,10 @@
 		015168552B4EFA820069E5FC /* Astrology */ = {
 			isa = PBXGroup;
 			children = (
-				01827FBB2BCF408400ACBBAF /* WebService.swift */,
 				015168562B4EFA820069E5FC /* AstrologyApp.swift */,
-				015168582B4EFA820069E5FC /* ContentView.swift */,
-				01827FBD2BCF41D000ACBBAF /* PostViewModel.swift */,
+				011AB8592BD0631D00A2EA65 /* Models */,
+				011AB8572BD0631100A2EA65 /* ViewModels */,
+				011AB8582BD0631800A2EA65 /* Views */,
 				0151685A2B4EFA840069E5FC /* Assets.xcassets */,
 				0151685C2B4EFA840069E5FC /* Preview Content */,
 			);
@@ -263,10 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01827FBE2BCF41D000ACBBAF /* PostViewModel.swift in Sources */,
+				01827FBE2BCF41D000ACBBAF /* AstrologyViewModel.swift in Sources */,
 				01827FBC2BCF408400ACBBAF /* WebService.swift in Sources */,
-				015168592B4EFA820069E5FC /* ContentView.swift in Sources */,
+				011AB8562BD0616B00A2EA65 /* ContentView.swift in Sources */,
+				011AB8542BD0611900A2EA65 /* Position.swift in Sources */,
+				015168592B4EFA820069E5FC /* AstrologyView.swift in Sources */,
 				015168572B4EFA820069E5FC /* AstrologyApp.swift in Sources */,
+				011AB8522BD060F800A2EA65 /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

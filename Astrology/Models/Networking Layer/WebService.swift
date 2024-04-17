@@ -28,12 +28,6 @@ class WebService: Codable {
             let (data, response) = try await URLSession.shared.data(for: request)
             guard let response = response as? HTTPURLResponse else { throw NetworkError.badResponse }
             guard response.statusCode >= 200 && response.statusCode < 300 else { throw NetworkError.badStatus }
-            if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                // Use the JSON data here
-                print("JSON response received: \(json)")
-            } else {
-                print("Failed to decode JSON")
-            }
             guard let decodedResponse = try? JSONDecoder().decode(T.self, from: data) else {
                 throw NetworkError.failedToDecodeResponse
             }
