@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015168572B4EFA820069E5FC /* AstrologyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168562B4EFA820069E5FC /* AstrologyApp.swift */; };
+		015168592B4EFA820069E5FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168582B4EFA820069E5FC /* ContentView.swift */; };
+		0151685B2B4EFA840069E5FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0151685A2B4EFA840069E5FC /* Assets.xcassets */; };
+		0151685E2B4EFA840069E5FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0151685D2B4EFA840069E5FC /* Preview Assets.xcassets */; };
+		015168682B4EFA840069E5FC /* AstrologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168672B4EFA840069E5FC /* AstrologyTests.swift */; };
+		015168722B4EFA840069E5FC /* AstrologyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168712B4EFA840069E5FC /* AstrologyUITests.swift */; };
+		015168742B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168732B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift */; };
+		01827FBC2BCF408400ACBBAF /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01827FBB2BCF408400ACBBAF /* WebService.swift */; };
+		01827FBE2BCF41D000ACBBAF /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01827FBD2BCF41D000ACBBAF /* PostViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		015168642B4EFA840069E5FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0151684B2B4EFA820069E5FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 015168522B4EFA820069E5FC;
+			remoteInfo = Astrology;
+		};
+		0151686E2B4EFA840069E5FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0151684B2B4EFA820069E5FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 015168522B4EFA820069E5FC;
+			remoteInfo = Astrology;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		015168532B4EFA820069E5FC /* Astrology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astrology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		015168562B4EFA820069E5FC /* AstrologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyApp.swift; sourceTree = "<group>"; };
+		015168582B4EFA820069E5FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0151685A2B4EFA840069E5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0151685D2B4EFA840069E5FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		015168632B4EFA840069E5FC /* AstrologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstrologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		015168672B4EFA840069E5FC /* AstrologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyTests.swift; sourceTree = "<group>"; };
+		0151686D2B4EFA840069E5FC /* AstrologyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstrologyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		015168712B4EFA840069E5FC /* AstrologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyUITests.swift; sourceTree = "<group>"; };
+		015168732B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01827FBB2BCF408400ACBBAF /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		01827FBD2BCF41D000ACBBAF /* PostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		015168502B4EFA820069E5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015168602B4EFA840069E5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0151686A2B4EFA840069E5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0151684A2B4EFA820069E5FC = {
+			isa = PBXGroup;
+			children = (
+				015168552B4EFA820069E5FC /* Astrology */,
+				015168662B4EFA840069E5FC /* AstrologyTests */,
+				015168702B4EFA840069E5FC /* AstrologyUITests */,
+				015168542B4EFA820069E5FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		015168542B4EFA820069E5FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				015168532B4EFA820069E5FC /* Astrology.app */,
+				015168632B4EFA840069E5FC /* AstrologyTests.xctest */,
+				0151686D2B4EFA840069E5FC /* AstrologyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		015168552B4EFA820069E5FC /* Astrology */ = {
+			isa = PBXGroup;
+			children = (
+				01827FBB2BCF408400ACBBAF /* WebService.swift */,
+				015168562B4EFA820069E5FC /* AstrologyApp.swift */,
+				015168582B4EFA820069E5FC /* ContentView.swift */,
+				01827FBD2BCF41D000ACBBAF /* PostViewModel.swift */,
+				0151685A2B4EFA840069E5FC /* Assets.xcassets */,
+				0151685C2B4EFA840069E5FC /* Preview Content */,
+			);
+			path = Astrology;
+			sourceTree = "<group>";
+		};
+		0151685C2B4EFA840069E5FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0151685D2B4EFA840069E5FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		015168662B4EFA840069E5FC /* AstrologyTests */ = {
+			isa = PBXGroup;
+			children = (
+				015168672B4EFA840069E5FC /* AstrologyTests.swift */,
+			);
+			path = AstrologyTests;
+			sourceTree = "<group>";
+		};
+		015168702B4EFA840069E5FC /* AstrologyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				015168712B4EFA840069E5FC /* AstrologyUITests.swift */,
+				015168732B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift */,
+			);
+			path = AstrologyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		015168522B4EFA820069E5FC /* Astrology */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 015168772B4EFA840069E5FC /* Build configuration list for PBXNativeTarget "Astrology" */;
+			buildPhases = (
+				0151684F2B4EFA820069E5FC /* Sources */,
+				015168502B4EFA820069E5FC /* Frameworks */,
+				015168512B4EFA820069E5FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Astrology;
+			productName = Astrology;
+			productReference = 015168532B4EFA820069E5FC /* Astrology.app */;
+			productType = "com.apple.product-type.application";
+		};
+		015168622B4EFA840069E5FC /* AstrologyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0151687A2B4EFA840069E5FC /* Build configuration list for PBXNativeTarget "AstrologyTests" */;
+			buildPhases = (
+				0151685F2B4EFA840069E5FC /* Sources */,
+				015168602B4EFA840069E5FC /* Frameworks */,
+				015168612B4EFA840069E5FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				015168652B4EFA840069E5FC /* PBXTargetDependency */,
+			);
+			name = AstrologyTests;
+			productName = AstrologyTests;
+			productReference = 015168632B4EFA840069E5FC /* AstrologyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0151686C2B4EFA840069E5FC /* AstrologyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0151687D2B4EFA840069E5FC /* Build configuration list for PBXNativeTarget "AstrologyUITests" */;
+			buildPhases = (
+				015168692B4EFA840069E5FC /* Sources */,
+				0151686A2B4EFA840069E5FC /* Frameworks */,
+				0151686B2B4EFA840069E5FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0151686F2B4EFA840069E5FC /* PBXTargetDependency */,
+			);
+			name = AstrologyUITests;
+			productName = AstrologyUITests;
+			productReference = 0151686D2B4EFA840069E5FC /* AstrologyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0151684B2B4EFA820069E5FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					015168522B4EFA820069E5FC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					015168622B4EFA840069E5FC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 015168522B4EFA820069E5FC;
+					};
+					0151686C2B4EFA840069E5FC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 015168522B4EFA820069E5FC;
+					};
+				};
+			};
+			buildConfigurationList = 0151684E2B4EFA820069E5FC /* Build configuration list for PBXProject "Astrology" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0151684A2B4EFA820069E5FC;
+			productRefGroup = 015168542B4EFA820069E5FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				015168522B4EFA820069E5FC /* Astrology */,
+				015168622B4EFA840069E5FC /* AstrologyTests */,
+				0151686C2B4EFA840069E5FC /* AstrologyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		015168512B4EFA820069E5FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0151685E2B4EFA840069E5FC /* Preview Assets.xcassets in Resources */,
+				0151685B2B4EFA840069E5FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015168612B4EFA840069E5FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0151686B2B4EFA840069E5FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0151684F2B4EFA820069E5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01827FBE2BCF41D000ACBBAF /* PostViewModel.swift in Sources */,
+				01827FBC2BCF408400ACBBAF /* WebService.swift in Sources */,
+				015168592B4EFA820069E5FC /* ContentView.swift in Sources */,
+				015168572B4EFA820069E5FC /* AstrologyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0151685F2B4EFA840069E5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015168682B4EFA840069E5FC /* AstrologyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015168692B4EFA840069E5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015168722B4EFA840069E5FC /* AstrologyUITests.swift in Sources */,
+				015168742B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		015168652B4EFA840069E5FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 015168522B4EFA820069E5FC /* Astrology */;
+			targetProxy = 015168642B4EFA840069E5FC /* PBXContainerItemProxy */;
+		};
+		0151686F2B4EFA840069E5FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 015168522B4EFA820069E5FC /* Astrology */;
+			targetProxy = 0151686E2B4EFA840069E5FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015168752B4EFA840069E5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		015168762B4EFA840069E5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		015168782B4EFA840069E5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Astrology/Preview Content\"";
+				DEVELOPMENT_TEAM = TWCD96G7AS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fareedq.Astrology;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		015168792B4EFA840069E5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Astrology/Preview Content\"";
+				DEVELOPMENT_TEAM = TWCD96G7AS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fareedq.Astrology;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0151687B2B4EFA840069E5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fareedq.AstrologyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astrology.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Astrology";
+			};
+			name = Debug;
+		};
+		0151687C2B4EFA840069E5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fareedq.AstrologyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astrology.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Astrology";
+			};
+			name = Release;
+		};
+		0151687E2B4EFA840069E5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fareedq.AstrologyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astrology;
+			};
+			name = Debug;
+		};
+		0151687F2B4EFA840069E5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fareedq.AstrologyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astrology;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0151684E2B4EFA820069E5FC /* Build configuration list for PBXProject "Astrology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015168752B4EFA840069E5FC /* Debug */,
+				015168762B4EFA840069E5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		015168772B4EFA840069E5FC /* Build configuration list for PBXNativeTarget "Astrology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015168782B4EFA840069E5FC /* Debug */,
+				015168792B4EFA840069E5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0151687A2B4EFA840069E5FC /* Build configuration list for PBXNativeTarget "AstrologyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0151687B2B4EFA840069E5FC /* Debug */,
+				0151687C2B4EFA840069E5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0151687D2B4EFA840069E5FC /* Build configuration list for PBXNativeTarget "AstrologyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0151687E2B4EFA840069E5FC /* Debug */,
+				0151687F2B4EFA840069E5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0151684B2B4EFA820069E5FC /* Project object */;
+}
