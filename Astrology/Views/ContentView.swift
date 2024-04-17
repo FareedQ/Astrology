@@ -7,24 +7,18 @@
 
 import SwiftUI
 
-struct SecondView: View {
-    var body: some View {
-        Text("Second View")
-    }
-}
-
 struct ContentView: View {
     var body: some View {
         TabView {
             AstrologyView()
                 .tabItem {
-                    Image(systemName: "1.square.fill")
-                    Text("First")
+                    Image(systemName: "moon.stars")
+                    Text("Natal Chart")
                 }
-            SecondView()
+            ChatView()
                 .tabItem {
-                    Image(systemName: "2.square.fill")
-                    Text("Second")
+                    Image(systemName: "message.fill")
+                    Text("Astro Chat")
                 }
         }
     }

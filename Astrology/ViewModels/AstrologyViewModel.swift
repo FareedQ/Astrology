@@ -10,8 +10,9 @@ import Foundation
 @MainActor class AstrologyViewModel: ObservableObject {
     @Published var planets = [Planet]()
     
+    let url = "https://fareedq.pythonanywhere.com/v1/all/"
     func fetchData(_ parameters: [String:String] = [:]) async {
-        guard let downloadedData: [Planet] = await WebService().downloadData(fromURL: "https://fareedq.pythonanywhere.com/v1/all/", parameters: parameters) else {return}
+        guard let downloadedData: [Planet] = await WebService().downloadData(fromURL: url, parameters: parameters) else {return}
         planets = downloadedData
     }
 }
