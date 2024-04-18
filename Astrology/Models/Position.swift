@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Position: Codable {
+struct Position: Codable, Hashable {
     let absoluteDegrees: Float
     let sign: String
     let deg: Float
@@ -24,5 +24,25 @@ struct Position: Codable {
     
     func asText() -> String {
         return "\(sign) \(Int(deg))° \(Int(min))'"
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(absoluteDegrees)
+        hasher.combine(sign)
+        hasher.combine(deg)
+        hasher.combine(min)
+        hasher.combine(sec)
+    }
+    
+    func angleOfXOnCircle(_ radius: CGFloat) -> CGFloat {
+        return radius * cos(degreesToRadians(Int(absoluteDegrees))) + radius
+    }
+    
+    func angleOfYOnCircle(_ radius: CGFloat) -> CGFloat {
+        return radius * sin(degreesToRadians(Int(absoluteDegrees))) + radius
+    }
+    
+    private func degreesToRadians(_ degrees: Int) -> CGFloat {
+        return CGFloat(degrees) * .pi / 180
     }
 }

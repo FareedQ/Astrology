@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0113F8ED2BD1C25500E9C678 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0113F8EC2BD1C25500E9C678 /* CircleView.swift */; };
+		0113F8EF2BD1C27D00E9C678 /* CirclePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0113F8EE2BD1C27D00E9C678 /* CirclePoint.swift */; };
+		0113F8F12BD1C2B200E9C678 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0113F8F02BD1C2B200E9C678 /* ChartView.swift */; };
 		011AB8522BD060F800A2EA65 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011AB8512BD060F800A2EA65 /* Planet.swift */; };
 		011AB8542BD0611900A2EA65 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011AB8532BD0611900A2EA65 /* Position.swift */; };
 		011AB8562BD0616B00A2EA65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011AB8552BD0616B00A2EA65 /* ContentView.swift */; };
@@ -50,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0113F8EC2BD1C25500E9C678 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		0113F8EE2BD1C27D00E9C678 /* CirclePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePoint.swift; sourceTree = "<group>"; };
+		0113F8F02BD1C2B200E9C678 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		011AB8512BD060F800A2EA65 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		011AB8532BD0611900A2EA65 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		011AB8552BD0616B00A2EA65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +109,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0113F8EB2BD1C24100E9C678 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				0113F8EC2BD1C25500E9C678 /* CircleView.swift */,
+				0113F8EE2BD1C27D00E9C678 /* CirclePoint.swift */,
+				0113F8F02BD1C2B200E9C678 /* ChartView.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
 		011AB8572BD0631100A2EA65 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +173,7 @@
 		011AB86C2BD06D5300A2EA65 /* Natal-Chart */ = {
 			isa = PBXGroup;
 			children = (
+				0113F8EB2BD1C24100E9C678 /* Chart */,
 				015168582B4EFA820069E5FC /* AstrologyView.swift */,
 				011AB86F2BD0742600A2EA65 /* PlanetList.swift */,
 				011AB8712BD074B200A2EA65 /* PlanetCell.swift */,
@@ -355,7 +372,9 @@
 			files = (
 				011AB8642BD0663A00A2EA65 /* ChatViewModel.swift in Sources */,
 				011AB8622BD0662F00A2EA65 /* SendMessageBar.swift in Sources */,
+				0113F8ED2BD1C25500E9C678 /* CircleView.swift in Sources */,
 				01827FBE2BCF41D000ACBBAF /* AstrologyViewModel.swift in Sources */,
+				0113F8EF2BD1C27D00E9C678 /* CirclePoint.swift in Sources */,
 				011AB85F2BD0662F00A2EA65 /* MessageCell.swift in Sources */,
 				01827FBC2BCF408400ACBBAF /* WebService.swift in Sources */,
 				011AB8702BD0742600A2EA65 /* PlanetList.swift in Sources */,
@@ -368,6 +387,7 @@
 				011AB8542BD0611900A2EA65 /* Position.swift in Sources */,
 				011AB8662BD0665000A2EA65 /* Message.swift in Sources */,
 				015168592B4EFA820069E5FC /* AstrologyView.swift in Sources */,
+				0113F8F12BD1C2B200E9C678 /* ChartView.swift in Sources */,
 				011AB8722BD074B200A2EA65 /* PlanetCell.swift in Sources */,
 				015168572B4EFA820069E5FC /* AstrologyApp.swift in Sources */,
 				011AB8522BD060F800A2EA65 /* Planet.swift in Sources */,
@@ -537,7 +557,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,7 +587,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

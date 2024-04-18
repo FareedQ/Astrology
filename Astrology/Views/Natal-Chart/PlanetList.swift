@@ -8,15 +8,12 @@
 import SwiftUI
 
 struct PlanetList: View {
-    var planets: [Planet]
+    @Binding var selectedPlanet: Planet?
+    let planets: [Planet]
     
     var body: some View {
-        List(planets, id: \.id) { planet in
+        List(planets, id: \.self, selection: $selectedPlanet) { planet in
             PlanetCell(planet: planet)
         }
     }
-}
-
-#Preview {
-    PlanetList(planets: [Planet]())
 }
