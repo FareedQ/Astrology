@@ -8,36 +8,27 @@
 import SwiftUI
 
 struct ChatView: View {
-    @State var messages: [Message] = []
-    @State var newMessage: String = ""
+    @State var message: String = ""
     
     @StateObject var vm = ChatViewModel()
     
     var body: some View {
         ScrollViewReader { proxy in
             VStack {
-                MessageList(proxy: proxy, messages: $messages)
+                MessageList(proxy: proxy)
+                    .environmentObject(vm)
                 Divider()
                 Spacer(minLength: 10)
-                SendMessageBar(newMessage: $newMessage, sendMessage: sendMessage)
+                SendMessageBar(message: $message)
+                    .environmentObject(vm)
                 Spacer(minLength: 10)
-            }
-        }
-    }
-    
-    
-    func sendMessage() -> Void {
-        if !newMessage.isEmpty {
-            Task {
-                messages.append(Message(content: newMessage, isCurrentUser: true))
-                await vm.fetchData(["question":newMessage])
-                messages.append(Message(content: vm.responseData.response, isCurrentUser: false))
-                newMessage = ""
             }
         }
     }
 }
 
-#Preview {
-    ChatView()
+struct ChatView_Previews: PreviewProvider {
+    static var previews: some View {
+        ChatView()
+    }
 }

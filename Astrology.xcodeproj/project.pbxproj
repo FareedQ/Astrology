@@ -33,6 +33,8 @@
 		015168742B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015168732B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift */; };
 		01827FBC2BCF408400ACBBAF /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01827FBB2BCF408400ACBBAF /* WebService.swift */; };
 		01827FBE2BCF41D000ACBBAF /* AstrologyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01827FBD2BCF41D000ACBBAF /* AstrologyViewModel.swift */; };
+		01E0FDA52BD2CFE200C4751F /* DividingLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0FDA42BD2CFE200C4751F /* DividingLine.swift */; };
+		01E0FDA82BD2D28000C4751F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0FDA72BD2D28000C4751F /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		015168732B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01827FBB2BCF408400ACBBAF /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		01827FBD2BCF41D000ACBBAF /* AstrologyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstrologyViewModel.swift; sourceTree = "<group>"; };
+		01E0FDA42BD2CFE200C4751F /* DividingLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividingLine.swift; sourceTree = "<group>"; };
+		01E0FDA72BD2D28000C4751F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				0113F8EC2BD1C25500E9C678 /* CircleView.swift */,
+				01E0FDA42BD2CFE200C4751F /* DividingLine.swift */,
 				0113F8EE2BD1C27D00E9C678 /* CirclePoint.swift */,
 				0113F8F02BD1C2B200E9C678 /* ChartView.swift */,
 			);
@@ -209,6 +214,7 @@
 				011AB8592BD0631D00A2EA65 /* Models */,
 				011AB8572BD0631100A2EA65 /* ViewModels */,
 				011AB8582BD0631800A2EA65 /* Views */,
+				01E0FDA62BD2D26E00C4751F /* Extensions */,
 				0151685A2B4EFA840069E5FC /* Assets.xcassets */,
 				0151685C2B4EFA840069E5FC /* Preview Content */,
 			);
@@ -238,6 +244,14 @@
 				015168732B4EFA840069E5FC /* AstrologyUITestsLaunchTests.swift */,
 			);
 			path = AstrologyUITests;
+			sourceTree = "<group>";
+		};
+		01E0FDA62BD2D26E00C4751F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01E0FDA72BD2D28000C4751F /* DateExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,8 +395,10 @@
 				011AB8682BD0665800A2EA65 /* Post.swift in Sources */,
 				011AB8602BD0662F00A2EA65 /* MessageView.swift in Sources */,
 				011AB86A2BD066CF00A2EA65 /* ChatView.swift in Sources */,
+				01E0FDA52BD2CFE200C4751F /* DividingLine.swift in Sources */,
 				011AB8562BD0616B00A2EA65 /* ContentView.swift in Sources */,
 				011AB8612BD0662F00A2EA65 /* MessageList.swift in Sources */,
+				01E0FDA82BD2D28000C4751F /* DateExtension.swift in Sources */,
 				011AB86E2BD070A400A2EA65 /* DateTimePicker.swift in Sources */,
 				011AB8542BD0611900A2EA65 /* Position.swift in Sources */,
 				011AB8662BD0665000A2EA65 /* Message.swift in Sources */,

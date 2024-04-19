@@ -34,12 +34,10 @@ struct Position: Codable, Hashable {
         hasher.combine(sec)
     }
     
-    func angleOfXOnCircle(_ radius: CGFloat) -> CGFloat {
-        return radius * cos(degreesToRadians(Int(absoluteDegrees))) + radius
-    }
-    
-    func angleOfYOnCircle(_ radius: CGFloat) -> CGFloat {
-        return radius * sin(degreesToRadians(Int(absoluteDegrees))) + radius
+    func onCircleWithRadius(_ radius:CGFloat) -> CGPoint {
+        let x = radius * cos(degreesToRadians(Int(absoluteDegrees)))
+        let y = radius * sin(degreesToRadians(Int(absoluteDegrees)))
+        return CGPoint(x: x, y: y)
     }
     
     private func degreesToRadians(_ degrees: Int) -> CGFloat {

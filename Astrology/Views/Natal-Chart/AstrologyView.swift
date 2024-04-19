@@ -17,7 +17,7 @@ struct AstrologyView: View {
     
     var body: some View {
         VStack {
-            DateTimePicker(birthDate: $birthDate, vm: vm, planets: $planets, extractDateTime: extractDateTime)
+            DateTimePicker(birthDate: $birthDate, vm: vm, planets: $planets)
             .padding(10)
             ChartView(planets: planets, selectedPlanet: $selectedPlanet)
             .padding(10)
@@ -29,15 +29,6 @@ struct AstrologyView: View {
                 planets = vm.planets
             }
         }
-    }
-    
-    func extractDateTime(_ given:Date) -> (String, String) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd"
-        let date = dateFormatter.string(from: given)
-        dateFormatter.dateFormat = "HH:mm:ss"
-        let time = dateFormatter.string(from: given)
-        return (date, time)
     }
 }
 

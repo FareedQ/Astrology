@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct SendMessageBar: View {
-    @Binding var newMessage: String
-    var sendMessage: () -> Void
+    @Binding var message: String
+    @EnvironmentObject private var vm: ChatViewModel
     
     var body: some View {
         HStack {
             Spacer(minLength: 15)
-            TextField("Send a message", text: $newMessage, onCommit: { sendMessage() })
+            TextField("Send a message", text: $message, onCommit: {
+                vm.sendMessage(message)
+                message = ""
+            })
                 .textFieldStyle(.roundedBorder)
-            Button(action: sendMessage) {
+            Button(action: {
+                vm.sendMessage(message)
+                message = ""
+            }) {
                 Image(systemName: "paperplane")
             }
             Spacer(minLength: 15)
@@ -24,8 +30,19 @@ struct SendMessageBar: View {
     }
 }
 
-
-
-//#Preview {
-//    SendMessageBar(newMessage: $name, mySendMessage: doNothing)
-//}
+struct SendMessageBar_Previews: PreviewProvider {
+    static var previews: some View {
+        let dummyMessage = "Hello, World!"
+        let chatViewModel = ChatViewModel()
+        let messageBinding = Binding<String>(
+            get: { dummyMessage },
+            set: { _ in }
+        )
+        
+        return SendMessageBar(message: messageBinding)
+            .environmentObject(chatViewModel)
+            .previewLayout(.fixed(width: 400, height: 50)) // Adjust the preview size as needed
+            .padding()
+            .background(Color.white) // Add a background color for better visibility
+    }
+}
